@@ -52,7 +52,7 @@
           "type": "string"
         },
         "Actual": {
-          "description": "The measured part of the element as absolute number.",
+          "description": "The measured part of the element in percentage.",
           "type": "number",
           "minimum": 0,
           "maximum": 100
@@ -501,7 +501,7 @@
           "additionalProperties": false
         },
         "A97": {
-          "description": "The position number in the order",
+          "description": "A custom field for the position number in the order",
           "type": "number"
         },
         "A98": {

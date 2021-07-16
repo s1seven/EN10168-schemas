@@ -28,9 +28,21 @@
       "A07": "0334/2019/ZZS",
       "A08": "958722",
       "A09": "TR-12456",
-      "A97": 1,
-      "A98": "DN-1583836",
-      "A99": "AV-87682933",
+      "A97": {
+        "Key": "A custom field for the position number in the order",
+        "Value": "1",
+        "Type": "number"
+      },
+      "A98": {
+        "Key": "A custom field for the delivery note number",
+        "Value": "1",
+        "Type": "string"
+      },
+      "A99": {
+        "Key": "A custom field for the aviso document number",
+        "Value": "1",
+        "Type": "string"
+      },
       "SupplementaryInformation": {
         "A10": {
           "Key": "Buyer Reference Number",
@@ -84,16 +96,10 @@
         "Value": 5739.3,
         "Unit": "kg"
       },
-      "SupplementaryInformation": {
-        "B99": {
-          "Key": "B99",
-          "Value": "1607219/0001_20181023_1529",
-          "Type": "string"
-        }
-      }
+      "B14": "SupplementaryInformation",
+      "B99": "SupplementaryInformation"
     },
     "Inspection": {
-      "C00": "175508",
       "C02": "0001 längs",
       "C03": "-20 Celsius",
       "SupplementaryInformation": {
@@ -105,7 +111,7 @@
       },
       "ChemicalComposition": {
         "C71": {
-          "Actual": 0.15,
+          "Actual": 101.0,
           "Symbol": "C"
         },
         "C72": {
@@ -230,51 +236,8 @@
         }
       }
     },
-    "OtherTests": {
-      "D01": "Marking",
-      "NonDestructiveTests": {
-        "D02": {
-          "Key": "Visual En 10219-1",
-          "Value": "100",
-          "Unit": "%",
-          "Interpretation": "Positive",
-          "Type": "number"
-        },
-        "D03": {
-          "Key": "Non destructive test EN ISO 10893-2",
-          "Value": "100",
-          "Unit": "%",
-          "Interpretation": "Positive",
-          "Type": "number"
-        },
-        "D04": {
-          "Key": "Dimensional Inspection EN 10219-2",
-          "Value": "1",
-          "Unit": "Lot",
-          "Interpretation": "Positive",
-          "Type": "number"
-        }
-      },
-      "OtherProductTests": {
-        "D51": {
-          "Key": "Tensile flattening test",
-          "Value": "100",
-          "Unit": "%",
-          "Interpretation": "Positive",
-          "Type": "number"
-        }
-      }
-    },
     "Validation": {
-      "Z01": "We hereby certify, that the material described above has been tested and complies with the terms of the order. This certificate has been created by a data processing system and does not contain a personal signature but the name and the offical address of the appointet department.",
-      "Z02": "2018-10-23T09:30:10-01:00",
       "Z03": "Mr. Super Inspector",
-      "Z04": {
-        "NotifiedBodyNumber": "0780",
-        "DoCYear": "19",
-        "DoCNumber": "0780-CPD-P012",
-        "CE_Image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABACAMAAACtO5DNAAAAmVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjHWqVAAAAMnRSTlMAzexb/E0FmyQJ+NLj3/Hn2qynhlOiuZJ8VzsqFQyf1caPjG5CMCEP9b6wgHVpHZRHHxEaALYAAAHuSURBVFjDxZjZcoMwDEUNYQ0QAoSUACFbsy9t9f8f14d2bIfgIjOj6X2+PgO2LEtiKh3tollH5tgyI5vh5Y2yJAgn1smMug1VZljANUJiHbsJQajD4d8N4MKjDxuTr+hGL28xgD66yvlvqtCLEEAfvdxysAr9mAMMQNth17JniwkD0M4GoA99BRiArtfQh3ZcGII+TKEP7STwInOdNG5zeWdqeTG0ZU3nqevmc+5pf/Mknx1Yr+qotSy4ln7Lkz07jIXPEFoGIGvs7jvC58mywmaNFGTljw7LlynvVeYgyXcZHHUfyVk+uxKd5cYgdDl2ekaSZeoxrOSr+6FIzbFErtHkmUTeKDyFsMQeQ2sllqWqCDLFCZZsyEcbqkjdCU/G8DJEOFcqTyDi2cGT98BVIDw2w2vLV4V+vydgGhJRtWP9+7HQIFcijyk/uu7x9J69i4ihlGlIZHd1Ni8G7Qfjb8vJQeRFT4PsWDyojRfd2pE/YRry4A+9/Zoiflt10CUGzRPIWQf9iUHzdJ7ooGeEaMIN+a9jJAw+witDcNEJ0hNdUqV8CggfMMpnl7JYICxxKAszynKStAimLN1JGw7SNom4uaNvSQkbacL2n2BoQTBqoRsQ0Y+16Idx9CNE+sEn/bhWDJnznyFzOHDI/A3NAGlA3stefgAAAABJRU5ErkJggg=="
-      },
       "SupplementaryInformation": {
         "Z05": {
           "Key": "Quality Department Tel.",

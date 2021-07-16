@@ -7,9 +7,23 @@ const { resolve } = require('path');
 const { fromBuffer } = require('pdf2pic');
 
 describe('Render', function () {
+  const translations = ['DE', 'EN', 'FR', 'PL'].reduce((acc, ln) => {
+    acc[ln] = JSON.parse(readFileSync(resolve(__dirname, `../${ln}.json`), 'utf-8'));
+    return acc;
+  }, {});
+
   const testSuitesMap = [
     {
       certificateName: `valid_certificate_1`,
+    },
+    {
+      certificateName: `valid_certificate_2`,
+    },
+    {
+      certificateName: `valid_certificate_3`,
+    },
+    {
+      certificateName: `valid_certificate_4`,
     },
   ];
 
@@ -22,6 +36,7 @@ describe('Render', function () {
       const html = await generateHtml(certificatePath, {
         templatePath,
         templateType: 'hbs',
+        translations,
       });
 
       const htmlDiffer = new HtmlDiffer({

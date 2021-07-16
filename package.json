@@ -22,9 +22,9 @@
     "release": "read -p 'GITHUB_TOKEN: ' GITHUB_TOKEN && export GITHUB_TOKEN=$GITHUB_TOKEN && release-it"
   },
   "devDependencies": {
-    "@s1seven/schema-tools-generate-html": "^0.0.20",
-    "@s1seven/schema-tools-generate-pdf": "^0.0.11",
-    "@s1seven/schema-tools-utils": "^0.0.17",
+    "@s1seven/schema-tools-generate-html": "^0.0.21",
+    "@s1seven/schema-tools-generate-pdf": "^0.0.12",
+    "@s1seven/schema-tools-utils": "^0.0.18",
     "ajv": "^8.6.0",
     "ajv-formats": "^2.1.0",
     "eslint": "^7.29.0",
